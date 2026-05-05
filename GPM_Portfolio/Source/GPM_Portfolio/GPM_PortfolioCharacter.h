@@ -1,10 +1,15 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+//Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+#include "InputActionValue.h"
+#include "InputMappingContext.h"
+#include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystems.h"
+//------------------------------------
 #include "GPM_PortfolioCharacter.generated.h"
 
 class UInputComponent;
@@ -18,7 +23,7 @@ DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 /**
  *  A basic first person character
  */
-UCLASS(abstract)
+UCLASS(config=Game)
 class AGPM_PortfolioCharacter : public ACharacter
 {
 	GENERATED_BODY()
@@ -35,11 +40,11 @@ protected:
 
 	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, Category ="Input")
-	UInputAction* JumpAction;
+	class UInputAction* JumpAction;
 
 	/** Move Input Action */
 	UPROPERTY(EditAnywhere, Category ="Input")
-	UInputAction* MoveAction;
+	class UInputAction* MoveAction;
 
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, Category ="Input")
@@ -48,9 +53,26 @@ protected:
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, Category ="Input")
 	class UInputAction* MouseLookAction;
+
+	/** Dash Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "EnhancedInput")
+	class UInputAction* DashAction;
+
+	/** Invincibility Toggle */
+	UPROPERTY(VisibleAnywhere, Category = "PlayerAttributes|Invincible")
+	bool isInvincible = false;
+
+	/** Timer Handle */
+	FTimerHandle IFrameDurationTimerHandle;
 	
 public:
 	AGPM_PortfolioCharacter();
+	/** Dash Function */
+	void Dash();
+
+	/** Cleanup Function */
+	void EndIFrameVis();
+
 
 protected:
 
