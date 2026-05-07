@@ -68,6 +68,7 @@ protected:
 public:
 	AGPM_PortfolioCharacter();
 	/** Dash Function */
+	UFUNCTION(BlueprintCallable, Category = "Movement")
 	void Dash();
 
 	/** Cleanup Function */
