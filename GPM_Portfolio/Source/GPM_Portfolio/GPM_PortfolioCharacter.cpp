@@ -59,6 +59,9 @@ void AGPM_PortfolioCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 		// Looking/Aiming
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AGPM_PortfolioCharacter::LookInput);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AGPM_PortfolioCharacter::LookInput);
+
+		// Dashing
+		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Started, this, &AGPM_PortfolioCharacter::Dash);
 	}
 	else
 	{
@@ -117,4 +120,22 @@ void AGPM_PortfolioCharacter::DoJumpEnd()
 {
 	// pass StopJumping to the character
 	StopJumping();
+}
+
+void AGPM_PortfolioCharacter::Dash()
+{
+	// Set Invincibility state
+	isInvincible = true;
+
+	// Apply dash velocity
+	LaunchCharacter(GetActorForwardVector() * 3000.0f, true, true);
+
+	// Start timer to end invincibility
+	GetWorldTimerManager().SetTimer(IFrameDurationTimerHandle, this, &AGPM_PortfolioCharacter::StopDashing, 0.5f, false);
+}
+
+void AGPM_PortfolioCharacter::StopDashing()
+{
+	// Reset invincibility state
+	isInvincible = false;
 }

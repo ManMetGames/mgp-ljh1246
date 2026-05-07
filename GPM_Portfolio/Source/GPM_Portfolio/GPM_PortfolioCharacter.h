@@ -71,7 +71,7 @@ public:
 	void Dash();
 
 	/** Cleanup Function */
-	void EndIFrameVis();
+	void StopDashing();
 
 
 protected:
