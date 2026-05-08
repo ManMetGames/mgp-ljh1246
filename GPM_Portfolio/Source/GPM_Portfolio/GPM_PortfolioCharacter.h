@@ -62,6 +62,12 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "PlayerAttributes|Invincible")
 	bool isInvincible = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool bCanDash = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float DashSpeed = 4000.0f;
+
 	/** Timer Handle */
 	FTimerHandle IFrameDurationTimerHandle;
 	
