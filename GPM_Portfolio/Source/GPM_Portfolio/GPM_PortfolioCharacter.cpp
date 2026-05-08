@@ -42,6 +42,10 @@ AGPM_PortfolioCharacter::AGPM_PortfolioCharacter()
 	// Configure character movement
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 	GetCharacterMovement()->AirControl = 0.5f;
+
+	// Initialise Dash Variables
+	bCanDash = true;
+	DashSpeed = 4000.0f;
 }
 
 void AGPM_PortfolioCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -65,7 +69,7 @@ void AGPM_PortfolioCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	}
 	else
 	{
-		UE_LOG(LogGPM_Portfolio, Error, TEXT("'%s' Failed to find an Enhanced Input Component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
+		UE_LOG(LogTemplateCharacter, Error, TEXT("'%s' Failed to find an Enhanced Input Component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
 	}
 }
 
@@ -130,7 +134,7 @@ void AGPM_PortfolioCharacter::Dash()
 	isInvincible = true;
 
 	/** * Dash Physics
-	* Apply dash velocity - Improves performance  of the movement
+	* Apply dash velocity - Improves performance of the movement
 	*/
 	LaunchCharacter(GetActorForwardVector() * DashSpeed, true, true);
 
