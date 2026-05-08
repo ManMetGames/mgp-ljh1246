@@ -54,7 +54,7 @@ protected:
 	UPROPERTY(EditAnywhere, Category ="Input")
 	class UInputAction* MouseLookAction;
 
-	/** Dash Input Action */
+	/** Dash Input Action Implementation -------------- */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "EnhancedInput")
 	class UInputAction* DashAction;
 

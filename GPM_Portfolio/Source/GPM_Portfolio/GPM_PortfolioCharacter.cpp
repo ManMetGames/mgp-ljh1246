@@ -64,7 +64,8 @@ void AGPM_PortfolioCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AGPM_PortfolioCharacter::LookInput);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AGPM_PortfolioCharacter::LookInput);
 
-		// Dashing
+
+		// Dashing Component added ----------------
 		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Started, this, &AGPM_PortfolioCharacter::Dash);
 	}
 	else
@@ -125,7 +126,7 @@ void AGPM_PortfolioCharacter::DoJumpEnd()
 	// pass StopJumping to the character
 	StopJumping();
 }
-// ---- Dash Implementation ----
+// ----------------- Dash Implementation -------------------
 void AGPM_PortfolioCharacter::Dash()
 {
 	/** * Set Invincibility state 
