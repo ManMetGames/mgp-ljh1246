@@ -121,21 +121,29 @@ void AGPM_PortfolioCharacter::DoJumpEnd()
 	// pass StopJumping to the character
 	StopJumping();
 }
-
+// ---- Dash Implementation ----
 void AGPM_PortfolioCharacter::Dash()
 {
-	// Set Invincibility state
+	/** * Set Invincibility state 
+	* State-based protection to add robustness to player survival mechanics
+	*/
 	isInvincible = true;
 
-	// Apply dash velocity
-	LaunchCharacter(GetActorForwardVector() * 3000.0f, true, true);
+	/** * Dash Physics
+	* Apply dash velocity - Improves performance  of the movement
+	*/
+	LaunchCharacter(GetActorForwardVector() * DashSpeed, true, true);
 
-	// Start timer to end invincibility
+	/** * Start timer to end invincibility
+	* Future-proofing - ensuring the mechanic is self-cleaning
+	*/
 	GetWorldTimerManager().SetTimer(IFrameDurationTimerHandle, this, &AGPM_PortfolioCharacter::StopDashing, 0.5f, false);
 }
 
 void AGPM_PortfolioCharacter::StopDashing()
 {
-	// Reset invincibility state
+	/** * Refinement - Reset invincibility state
+	* Ensures character restuns to default
+	*/
 	isInvincible = false;
 }

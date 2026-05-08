@@ -62,9 +62,15 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "PlayerAttributes|Invincible")
 	bool isInvincible = false;
 
+	/** * Dash availability state-check variable
+	* Integrated cooldown logic and UI feedback with Blueprints
+	*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	bool bCanDash = true;
 
+	/** Magnitude of the dash force
+	* Defined in C++ for extensibility
+	*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float DashSpeed = 4000.0f;
 
