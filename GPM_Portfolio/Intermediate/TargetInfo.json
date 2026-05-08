@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "GPM_Portfolio",
+			"Path": "..\\Source\\GPM_Portfolio.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "GPM_PortfolioEditor",
+			"Path": "..\\Source\\GPM_PortfolioEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

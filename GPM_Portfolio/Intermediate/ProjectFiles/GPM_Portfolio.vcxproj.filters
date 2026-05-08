@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\GPM_Portfolio.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GPM_Portfolio.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\GPM_PortfolioEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\GPM_Portfolio">
+      <UniqueIdentifier>{0215BF43-9A46-3D99-96BD-ACF4AEB7C5D2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GPM_Portfolio\GPM_Portfolio.Build.cs">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\GPM_Portfolio.cpp">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\GPM_Portfolio.h">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\GPM_PortfolioCameraManager.cpp">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\GPM_PortfolioCameraManager.h">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\GPM_PortfolioCharacter.cpp">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\GPM_PortfolioCharacter.h">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\GPM_PortfolioGameMode.cpp">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\GPM_PortfolioGameMode.h">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\GPM_PortfolioPlayerController.cpp">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\GPM_PortfolioPlayerController.h">
+      <Filter>Source\GPM_Portfolio</Filter>
+    </ClInclude>
+    <Filter Include="Source\GPM_Portfolio\Variant_Horror">
+      <UniqueIdentifier>{37740595-01E6-3290-B371-BA00BC4A75CB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Horror\HorrorCharacter.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Horror</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Horror\HorrorCharacter.h">
+      <Filter>Source\GPM_Portfolio\Variant_Horror</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Horror\HorrorGameMode.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Horror</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Horror\HorrorGameMode.h">
+      <Filter>Source\GPM_Portfolio\Variant_Horror</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Horror\HorrorPlayerController.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Horror</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Horror\HorrorPlayerController.h">
+      <Filter>Source\GPM_Portfolio\Variant_Horror</Filter>
+    </ClInclude>
+    <Filter Include="Source\GPM_Portfolio\Variant_Horror\UI">
+      <UniqueIdentifier>{4B3ED33A-ACB7-36E1-9A5E-3463BEF1225B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Horror\UI\HorrorUI.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Horror\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Horror\UI\HorrorUI.h">
+      <Filter>Source\GPM_Portfolio\Variant_Horror\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\GPM_Portfolio\Variant_Shooter">
+      <UniqueIdentifier>{9E79AF9E-21C1-38AF-AC00-0B0569414C36}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\ShooterCharacter.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\ShooterCharacter.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\ShooterGameMode.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\ShooterGameMode.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\ShooterPlayerController.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\ShooterPlayerController.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter</Filter>
+    </ClInclude>
+    <Filter Include="Source\GPM_Portfolio\Variant_Shooter\AI">
+      <UniqueIdentifier>{8CF3F322-9920-3061-9517-3FD030B14E4E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\EnvQueryContext_Target.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\EnvQueryContext_Target.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\ShooterAIController.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\ShooterAIController.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\ShooterNPC.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\ShooterNPC.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\ShooterStateTreeUtility.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\AI\ShooterStateTreeUtility.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\GPM_Portfolio\Variant_Shooter\UI">
+      <UniqueIdentifier>{FA4E61A4-DE1B-3283-8181-B4CE74153B85}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\UI\ShooterBulletCounterUI.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\UI\ShooterBulletCounterUI.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\UI\ShooterUI.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\UI\ShooterUI.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\GPM_Portfolio\Variant_Shooter\Weapons">
+      <UniqueIdentifier>{BCE7B6DB-F5BC-38FC-A5A4-171DDAA62101}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterPickup.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterPickup.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterProjectile.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterProjectile.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterWeapon.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterWeapon.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterWeaponHolder.cpp">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GPM_Portfolio\Variant_Shooter\Weapons\ShooterWeaponHolder.h">
+      <Filter>Source\GPM_Portfolio\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
